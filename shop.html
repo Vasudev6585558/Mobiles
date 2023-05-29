@@ -52,7 +52,13 @@
 
 </html>
 <div class="container">
-  <script src="myscripts.js"></script>
+  <script>rs(document).ready(function() {
+
+    rs('#list').click(function(event){event.preventDefault();rs('#products .item').addClass('list-group-item');});
+
+    rs('#grid').click(function(event){event.preventDefault();rs('#products .item').removeClass('list-group-item');rs('#products .item').addClass('grid-group-item');});
+
+});<script>
 <link rel="stylesheet" href="mystyle.css">
     <div class="well well-sm">
 
